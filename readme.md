@@ -16,7 +16,7 @@ II. MCQs with variable number of options and multiple correct answers [[link](ht
 Please note that we ensure that there is no intersection in the queries in both formats. This ensures that there is no data leakage and both datasets are independent. Any model trained on the dataset for the first task should not lead to seeing the answers for queries in the second dataset.
 
 
-It would be interesting to observe if a model trained on the first task can learn to select multiple answers from diverse number of choices correctly in comparison to a closed set of answers.
+It would be interesting to find out if a model trained on the first task can learn to select multiple answers from diverse number of choices correctly in comparison to a closed set of answers.
 
 
 An example of both datasets is provided below:  
@@ -54,3 +54,11 @@ ESAD is a large scale dataset ...
 
 ```conda create -n datarecommender python=3.11```  
 ```pip install -r requirements.txt```
+
+
+## Loading the dataset
+```
+from datasets import load_dataset
+mcq_sc = load_dataset('shrutisingh/dataset_recommendation_mcq_sc')
+mcq_mc = load_dataset('shrutisingh/dataset_recommendation_mcq_mc')
+```
