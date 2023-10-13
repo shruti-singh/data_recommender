@@ -9,12 +9,11 @@ We reformulate the above task into a ***MCQ question-answering format***.
 
 The dataset is available on huggingface.
 
-```
+<pre>
 The task is available in two types of MCQs:  
-
-I. MCQs with four options and a single correct answer [[link](https://huggingface.co/datasets/shrutisingh/dataset_recommendation_mcq_sc)]  
-II. MCQs with variable number of options and multiple correct answers </b> [[link](https://huggingface.co/datasets/shrutisingh/dataset_recommendation_mcq_mc)]
-```
+<b>I.</b> MCQs with four options and a single correct answer <a href="https://huggingface.co/datasets/shrutisingh/dataset_recommendation_mcq_sc">[link]</a>  
+<b>II.</b> MCQs with variable number of options and multiple correct answers <a href="https://huggingface.co/datasets/shrutisingh/dataset_recommendation_mcq_mc">[link]</a>  
+</pre>
 
 Please note that we ensure that there is no intersection in the queries in both formats. This ensures that there is no data leakage and both datasets are independent. Any model trained on the dataset for the first task should not lead to seeing the answers for queries in the second dataset.
 
